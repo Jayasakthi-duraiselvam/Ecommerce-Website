@@ -45,11 +45,11 @@ const ProductList = () => {
 
   let navigate = useNavigate();
   let { products, error, isLoading, setproducts } = useFetch(
-    "http://localhost:4000/products"
+    "https://fakestoreapi.com/products"
   );
 
   let handleDelete = (id) => {
-    axios.delete(`http://localhost:4000/products/${id}`).then(() => {
+    axios.delete(`https://fakestoreapi.com/products/${id}`).then(() => {
       Swal.fire({
         title: "Are you sure?",
         text: "You won't be able to revert this!",

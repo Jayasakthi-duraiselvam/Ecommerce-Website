@@ -18,7 +18,7 @@ const UpdateProduct = () => {
   let navigate=useNavigate();
 
   useEffect(()=>{
-    axios.get(`http://localhost:4000/products/${id}`)
+    axios.get(`https://fakestoreapi.com/products${id}`)
     .then((res)=>{
       setupdateProduct(res.data)
     })
@@ -48,7 +48,7 @@ const UpdateProduct = () => {
   let handleUpdate = (e) => {
     e.preventDefault();
 
-    fetch(`http://localhost:4000/products/${id}`, {
+    fetch(`https://fakestoreapi.com/products${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
