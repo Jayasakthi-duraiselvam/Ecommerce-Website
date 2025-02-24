@@ -37,7 +37,7 @@ function App() {
             <Route path="list" element={<ProductList />} />
             <Route path="details" element={<ProductDetails />} />
           </Route>
-          <Route path="/login/:newuser" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/todo" element={<TodoApp />} />
           <Route path="/newProduct" element={<NewProduct/>}/>
